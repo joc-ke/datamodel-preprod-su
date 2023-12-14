@@ -1,0 +1,12 @@
+---
+name: Auto semver
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  auto_semver:
+    name: Automatisk versjonering
+    uses: SPHF-Nettverk-IaC/workflows/.github/workflows/auto_semver.yml@main

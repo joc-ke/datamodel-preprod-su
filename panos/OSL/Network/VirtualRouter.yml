@@ -1,0 +1,44 @@
+---
+VirtualRouter:
+  name: 'OSL'
+  vsys: 'vsys1'
+  # interfaces:
+  static_routes:
+    - name: Default
+      destination: 0.0.0.0/0
+      # need to check on the design where the default route always point to,
+      # can potentially auto-generate
+      next_hop: '100.68.255.41'
+      interface:
+      description: 'Fallback default route'
+  bgp:
+    as_number: '65011'
+    # should we do autopick from ipam
+    router_id: '100.68.255.25'
+    # The following is an example on special sones on the OSL location,
+    # not part of standard zone model.
+    peer_as: 65001
+    auth_profile:
+      name: 'bgp-common'
+      secret: ''
+    import_config:
+      import_policy:
+        # - name: 'Single import policy'
+        #   import_action: 'allow'
+        #   used_by: ''
+        #   match:
+        #     as_path:
+        #       regex: '(6500.?)'
+        #       as_path_type: 'remove'
+    export_config:
+      export_policy:
+        - name: 'as-override'
+          export_action: 'allow'
+          match_as_path_regex: '64599'
+          as_path_type: 'remove-and-prepend'
+          as_path_value: 1
+        - name: 'default-route-only'
+          export_action: 'allow'
+          match_address_prefix:
+            prefix: '0.0.0.0/0'
+            exact: true

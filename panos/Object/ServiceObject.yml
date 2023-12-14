@@ -1,0 +1,27 @@
+# ServiceObjects:
+#   - name: mysql
+#     description: database protocol
+#     protocol: tcp
+#     destination_port: 3306
+#     source_port:
+#     session_timeout:
+#       inherit_from_application:
+#       override_tcp_timeout:
+#       override_tcp_half_closed_timeout:
+#       override_tcp_wait_timeout:
+#     tags:
+#       - tag1
+#       - tag2
+#   - name: mssql
+#     description: database protocol
+#     protocol: tcp
+#     destination_port: 1433
+#     source_port:
+#     session_timeout:
+#       inherit_from_application:
+#       override_tcp_timeout:
+#       override_tcp_half_closed_timeout:
+#       override_tcp_wait_timeout:
+#     tags:
+#       - tag1
+#       - tag2

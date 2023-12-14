@@ -1,0 +1,106 @@
+# ---
+# interfaces:
+  # - name: 'ae1.3110'
+  #   type: 'layer3'
+  #   vsys: 'vsys'
+  #   virtual_router: 'OSL'
+  #   # security_zone: 'inside'
+  #   ipv4:
+  #     type: 'static'
+  #     static: ''
+  #   mtu: 1500
+  #   link_speed: auto
+  #   link_duplex: auto
+  #   admin_state: up
+  #   interface_management_profile: 'ICMP-only'
+  # - name: 'ae1.3120'
+  #   type: 'layer3'
+  #   vsys: 'vsys'
+  #   virtual_router: 'OSL'
+  #   # security_zone: 'inside'
+  #   ipv4:
+  #     type: 'static'
+  #     static: ''
+  #   mtu: 1500
+  #   link_speed: auto
+  #   link_duplex: auto
+  #   admin_state: up
+  #   interface_management_profile: 'ICMP-only'
+  # - name: 'ae1.3130'
+  #   type: 'layer3'
+  #   vsys: 'vsys'
+  #   virtual_router: 'OSL'
+  #   # security_zone: 'inside'
+  #   ipv4:
+  #     type: 'static'
+  #     static: ''
+  #   mtu: 1500
+  #   link_speed: auto
+  #   link_duplex: auto
+  #   admin_state: up
+  #   interface_management_profile: 'ICMP-only'
+  # # - name: 'ae1.3104'
+  # #   type: 'layer3'
+  # #   vsys: 'vsys'
+  # #   virtual_router: 'OSL'
+  # #   # security_zone: 'inside'
+  # #   ipv4:
+  # #     type: 'static'
+  # #     static: ''
+  # #   mtu: 1500
+  # #   link_speed: auto
+  # #   link_duplex: auto
+  # #   admin_state: up
+  # #   interface_management_profile: 'ICMP-only'
+  # - name: 'ae2.3111'
+  #   type: 'layer3'
+  #   vsys: 'vsys'
+  #   virtual_router: 'OSL'
+  #   # security_zone: 'inside'
+  #   ipv4:
+  #     type: 'static'
+  #     static: ''
+  #   mtu: 1500
+  #   link_speed: auto
+  #   link_duplex: auto
+  #   admin_state: up
+  #   interface_management_profile: 'ICMP-only'
+  # - name: 'ae2.3121'
+  #   type: 'layer3'
+  #   vsys: 'vsys'
+  #   virtual_router: 'OSL'
+  #   # security_zone: 'inside'
+  #   ipv4:
+  #     type: 'static'
+  #     static: ''
+  #   mtu: 1500
+  #   link_speed: auto
+  #   link_duplex: auto
+  #   admin_state: up
+  #   interface_management_profile: 'ICMP-only'
+  # - name: 'ae2.3131'
+  #   type: 'layer3'
+  #   vsys: 'vsys'
+  #   virtual_router: 'OSL'
+  #   # security_zone: 'inside'
+  #   ipv4:
+  #     type: 'static'
+  #     static: ''
+  #   mtu: 1500
+  #   link_speed: auto
+  #   link_duplex: auto
+  #   admin_state: up
+  #   interface_management_profile: 'ICMP-only'
+  # # - name: 'ae2.3104'
+  # #   type: 'layer3'
+  # #   vsys: 'vsys'
+  # #   virtual_router: 'OSL'
+  # #   # security_zone: 'inside'
+  # #   ipv4:
+  # #     type: 'static'
+  # #     static: ''
+  # #   mtu: 1500
+  # #   link_speed: auto
+  # #   link_duplex: auto
+  # #   admin_state: up
+  # #   interface_management_profile: 'ICMP-only'

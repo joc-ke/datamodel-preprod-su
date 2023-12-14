@@ -1,0 +1,8 @@
+# Regions:
+#   - name: Bergen
+#     geo_location:
+#     latitude: 60.23
+#     longitude: 5.19
+#     addresses:
+#       - 10.0.0.0/8
+#       - 193.161.160.0/20

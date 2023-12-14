@@ -1,0 +1,12 @@
+# Move the following to the global-repo and only leave the overide
+# TacacsServerProfile:
+#   name: 'Tacacs server profile 1'
+#   location: 'shared'
+#   protocol: 'chap'
+#   servers:
+#     - name: 'tacacs server 1'
+#       server: '10.10.13.54'
+#       port: 49
+#       secret: 'SuperSecretTacacsSecret!#99'
+#   timeout: 5
+#   admin_only: true

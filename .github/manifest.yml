@@ -1,0 +1,46 @@
+---
+releases:
+  # Global data model
+  datamodel-global: main
+
+  # Data model build script
+  # Ideally this should be the same
+  # version for all modules
+  datamodel-build-script-dnac: main
+  datamodel-build-script-ise: main
+  datamodel-build-script-aci: main
+  datamodel-build-script-ndo: main
+  datamodel-build-script-panorama: main
+  datamodel-build-script-pyats: main
+  datamodel-build-script-fusion: main
+
+  # Container version for running 
+  # the script to build the complete
+  # data model. Ideally this should
+  # be the same version for all 
+  container-build-datamodel-dnac: latest
+  container-build-datamodel-ise: latest
+  container-build-datamodel-aci: latest
+  container-build-datamodel-ndo: latest
+  container-build-datamodel-panorama: latest
+  container-build-datamodel-pyats: latest
+  container-build-datamodel-fusion: latest
+
+  # Terraform modules
+  tf-dnac: main
+  tf-ise: main
+  tf-aci: main
+  tf-ndo: main
+  tf-panorama: main
+  tf-fusion: main
+
+  # Container version for running 
+  # terraform plan and apply for
+  # each of the tf modules
+  container-tf-dnac: latest
+  container-tf-ise: latest
+  container-tf-aci: latest
+  container-tf-ndo: latest
+  container-tf-panorama: latest
+  container-tf-fusion: latest
+  container-pyats: latest

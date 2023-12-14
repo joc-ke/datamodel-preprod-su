@@ -1,0 +1,14 @@
+AddressGroup:
+#   - name: url1_group
+#     description: Static address group example
+#     type: static
+#     StaticAddressGroup:
+#       members:
+#         - auth-client-server1
+  - name: SGT-Trustsec_Devices-HF-Prep
+    description:
+    type: dynamic
+    DynamicAddressGroup:
+      match:
+        - "'cts.svr_prep-hub-pan-1.sgt_TrustSec_Devices' or 'cts.svr_prep-hub-pan-2.sgt_TrustSec_Devices'"
+    tag: Purple

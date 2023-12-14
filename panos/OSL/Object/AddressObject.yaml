@@ -1,0 +1,9 @@
+# ---
+# AddressObjects:
+#   - name: auth-client-server2
+#     description: radius-clients
+#     type: ip-netmask
+#     value: 10.184.192.7/32
+#     tags:
+#       - terraformed
+#       - tag2

@@ -1,0 +1,5 @@
+# ApplicationGroup:
+#   - name: 'sip-group'
+#     application:
+#       - 'sip'
+#       - 'sip-custom1'

@@ -1,0 +1,51 @@
+---
+name: Terraform Plan (PANORAMA)
+
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review, synchronize]
+    branches:
+      - main
+    paths:
+      - "panos/**"
+  workflow_dispatch:
+
+jobs:
+  checkout_dm_and_modules:
+    name: Hent IaC kode og moduler
+    uses: SPHF-Nettverk-IaC/workflows/.github/workflows/checkout_dm_and_modules.yml@v0.12.11
+    secrets: inherit
+    with:
+      version_dm_global: ${{ vars.VERSION_DATAMODEL_GLOBAL }}
+      version_dnac: ${{ vars.VERSION_TF_DNAC }}
+      version_ise: ${{ vars.VERSION_TF_ISE }}
+      version_aci: ${{ vars.VERSION_TF_ACI }}
+      version_ndo: ${{ vars.VERSION_TF_NDO }}
+      version_panorama: ${{ vars.VERSION_TF_PANORAMA }}
+
+  merge_datamodels:
+    name: Bygg komplett datamodell
+    needs: [checkout_dm_and_modules]
+    uses: SPHF-Nettverk-IaC/workflows/.github/workflows/merge_datamodels_panorama.yml@v0.12.11
+    secrets: inherit
+    with:
+      container_version: ${{ vars.VERSION_CONTAINER_BUILD_DATAMODEL_PANORAMA }}
+      version: ${{ vars.VERSION_DATAMODEL_BUILD_SCRIPT_PANORAMA }}
+
+  terraform_plan:
+    name: Terraform Plan
+    needs: [merge_datamodels]
+    uses: SPHF-Nettverk-IaC/workflows/.github/workflows/terraform_plan.yml@v0.12.11
+    secrets:
+      env_vars: |
+        TF_VAR_PANORAMA_HOSTNAME=${{ secrets.PANORAMA_HOSTNAME }}
+        TF_VAR_PANORAMA_API_KEY=${{ secrets.PANORAMA_API_KEY }}
+        TF_VAR_PANORAMA_VERIFY_CERTIFICATE=false
+        TF_VAR_PANORAMA_TIMEOUT=10
+        TF_VAR_PANORAMA_LOGGING=["action"]
+        TF_VAR_BGP_SECRET=${{ secrets.FUSION_BGP_PEERING_PASSWORD }}
+    with:
+      container_version: ${{ vars.VERSION_CONTAINER_TF_PANORAMA }}
+      role: "panorama"
+      terraform_var_file: "../converter/output/panos.json"
+      terraform_parallelism: 10

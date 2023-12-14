@@ -1,0 +1,28 @@
+# Application:
+#   - name: 'sip-custom1'
+#     description: 'sip on alternative port'
+#     category: 'collaboration'
+#     subcategory: 'voip-video'
+#     tecnology:
+#     parent:
+#     risk: 4
+#     characteristics:
+#       file_transfer: false
+#       excessive_bandwidth: true
+#       tunnels_other_apps: true
+#       has_known_vulnerabilities: true
+#       used_by_malware: true
+#       evasive_behaviour: false
+#       pervasive_use: true
+#       prone_to_misuse: false
+#       continue_scanning_for_other_apps: true
+#     scanning:
+#       file_types: false
+#       viruses: false
+#       data_patterns: false
+#     timeouts: 
+#       timeout: 3600
+#       tcp_timeout: 3600
+#       udp_timeout: 3600
+#       tcp_half_closed_timeout: 120
+#       tcp_wait_timeout: 15

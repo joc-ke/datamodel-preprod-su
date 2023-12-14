@@ -1,0 +1,11 @@
+interface_management_profile:
+  - name: 'ICMP-only'
+    ping: true
+    telnet: false
+    ssh: false
+    http: false
+    https: false
+    snmp: false
+    permitted_ips:
+      - '0.0.0.0/0'
+      - '::/0'

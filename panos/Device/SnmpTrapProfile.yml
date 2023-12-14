@@ -1,0 +1,19 @@
+---
+# Move the following to global-repo and only leave the overide
+# SnmpTrapProfile:
+#   name: 'NNM_SNMPtrap'
+#   # location: 'vsys'
+#   version: 'v2c'
+#   V2cConfig:
+#     - server_name: 'sds-nmm-lab'
+#       manager: '10.187.128.73'
+#       community: 'ReplaceMe'
+#     - server_name: 'sd3-nmm-lab'
+#       manager: '10.183.0.20'
+#       community: 'ReplaceMe'
+#     - server_name: 'sds-nmm-03'
+#       manager: '10.187.128.34'
+#       community: 'ReplaceMe'
+#     - server_name: 'sd3-nmm-04'
+#       manager: '10.183.0.15'
+#       community: 'ReplaceMe'

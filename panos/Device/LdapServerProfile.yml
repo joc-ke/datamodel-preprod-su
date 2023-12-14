@@ -1,0 +1,16 @@
+#Overide the definition on global repo
+#LdapServerProfile:
+#  name: 'LDAP serverprofile 1'
+#  location: 'shared'
+#  servers:
+#  - name: 'LdapServer1'
+#    server: '10.10.43.20'
+#    port: 636
+#  type: 'active-directory'
+#  base_dn: 'dc=example, dc=com'
+#  bind_dn: 'cn=LDAPUser, ou=users, ou=services'
+#  bind_password: 'LDAPSecretPassword$!92'
+#  require_ssl: true
+#  verify_certificate: false
+#  timeout: 30
+#  retry_interval: 900

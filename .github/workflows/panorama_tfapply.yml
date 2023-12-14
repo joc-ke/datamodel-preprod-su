@@ -1,0 +1,25 @@
+---
+name: Terraform Apply (PANORAMA)
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'panos/**'
+
+jobs:
+  terraform_apply:
+    name: Terraform Apply
+    uses: SPHF-Nettverk-IaC/workflows/.github/workflows/terraform_apply.yml@v0.12.11
+    secrets:
+      env_vars: |
+        TF_VAR_PANORAMA_HOSTNAME=${{ secrets.PANORAMA_HOSTNAME }}
+        TF_VAR_PANORAMA_API_KEY=${{ secrets.PANORAMA_API_KEY }}
+        TF_VAR_PANORAMA_VERIFY_CERTIFICATE=false
+        TF_VAR_PANORAMA_TIMEOUT=10
+    with:
+      container_version: ${{ vars.VERSION_CONTAINER_TF_PANORAMA }}
+      role: 'panorama'
+      plan_workflow: 'panorama_tfplan.yml'
+      terraform_parallelism: 10

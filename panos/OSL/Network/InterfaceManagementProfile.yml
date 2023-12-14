@@ -1,0 +1,29 @@
+---
+interface_management_profile:
+  - name: "ICMP-only"
+    ping: true
+    telnet: false
+    ssh: false
+    http: false
+    https: false
+    snmp: false
+    permitted_ips:
+    description: "ICMP-only profile"
+  - name: "Management enabled interface"
+    ping: true
+    telnet: false
+    ssh: true
+    http: false
+    https: true
+    snmp: true
+    permitted_ips:
+    description: "Profile for management enabled ports"
+  - name: "ICMP and SNMP"
+    ping: true
+    telnet: false
+    ssh: false
+    http: false
+    https: true
+    snmp: true
+    permitted_ips:
+    description: "Profile for SNMP-enabled ports"

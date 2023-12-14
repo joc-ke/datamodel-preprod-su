@@ -1,0 +1,13 @@
+---
+name: Auto assign PR
+
+on:
+  pull_request:
+    types: [opened]
+    branches:
+      - main
+
+jobs:
+  call-reusable-auto-assign-pr:
+   name: Calling Auto assign PR workflow
+   uses: SPHF-Nettverk-IaC/workflows/.github/workflows/auto_assign_pr.yml@v0.3.0

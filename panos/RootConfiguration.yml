@@ -1,0 +1,8 @@
+#RootConfiguration:
+devicegroup:
+    name: Preprod HF
+    description: Preprod DeviceGroup
+    parent: Lokasjonsbrannmur
+template:
+    name: Preprod HF
+    description: template used for Preprod

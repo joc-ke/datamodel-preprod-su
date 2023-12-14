@@ -1,0 +1,15 @@
+---
+# RadiusServerProfile:
+#   name: 'Radius_ISE_Profile'
+#   location: 'shared'
+#   protocol: 'pap'
+#   servers:
+#     - name: 'sd3-isepolda-01'
+#       server: '10.183.0.84'
+#       port: 1812
+#       secret: 'ReplaceMe'
+#     - name: 'sds-isepolda-01'
+#       server: '10.187.128.84'
+#       port: 1812
+#       secret: 'ReplaceMe'
+#   timeout: 5

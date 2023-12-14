@@ -1,0 +1,14 @@
+# interfaces: 
+#   - name: 'ethernet1/1'
+#     type: 'Ethernet'
+#     vsys: 'vsys'
+#     virtual_router: 'default'
+#     security_zone: 'inside'
+#     ipv4:
+#       type: 'static'
+#       static: '10.10.10.1/24'
+#     mtu: 1500
+#     link_speed: auto
+#     link_dyplex: auto
+#     admin_state: up
+#     interface_management_profile: 'ICMP-only'

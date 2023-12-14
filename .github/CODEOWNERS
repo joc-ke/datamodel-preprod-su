@@ -1,0 +1,23 @@
+# ==================================
+#             CODEOWNERS
+# ==================================
+# Rules are evaluated from the top,
+#     so order is important!
+#  The last matching pattern takes 
+#      the most precedence.
+# ==================================
+
+# Default owners for files in the repo
+# Uncomment the line that makes sense
+# for this repo. Only one line!
+# * @SPHF-Nettverk-IaC/team-devsecops
+* @SPHF-Nettverk-IaC/team-datamodel
+# * @SPHF-Nettverk-IaC/team-terraform
+# * @SPHF-Nettverk-IaC/team-integration
+
+# Owner for workflows, templates etc.
+/.github/** @SPHF-Nettverk-IaC/team-devsecops
+
+# Remember to add the new repo to the 
+# team and give the team permissions!
+# Go to Org -> Teams -> Repo

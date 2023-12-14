@@ -1,0 +1,18 @@
+---
+# Move the following to the global repo and only leave the override
+# SyslogServerProfile:
+#   name: 'Syslog_Forward'
+#   # location: 'vsys1'
+#   servers:
+#     - server_name: 'SDS-SYSLOG'
+#       server: '10.184.250.30'
+#       protocol: udp
+#       port: 514
+#       format: 'BSD'
+#       facility: "LOG_USER"
+#     - server_name: 'SD3-SYSLOG'
+#       server: '10.190.252.30'
+#       protocol: udp
+#       port: 514
+#       format: 'BSD'
+#       facility: "LOG_USER"

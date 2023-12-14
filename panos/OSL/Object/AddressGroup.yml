@@ -1,0 +1,8 @@
+# AddressGroup:
+#   - name: Address_group2
+#     description: Static address group example
+#     type: static
+#     StaticAddressGroup:
+#       members:
+#         - auth-client-server1
+#         - auth-client-server2

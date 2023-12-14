@@ -1,0 +1,12 @@
+---
+AuthenticationProfile:
+  name: 'SIKT_RADIUS_Admin_Auth_Profile'
+  location: 'vsys'
+  authentication_type: 'radius'
+  allow-list: 'all'
+  multi-factor-auth:
+    mfa-enable: false
+  # server_profile:
+  user_domain: ''
+  username_modifier: ''
+  retrieve_user_groups: false

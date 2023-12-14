@@ -1,0 +1,8 @@
+# ServiceGroups:
+#   - name: database_protocols
+#     services:
+#       - mssql
+#       - mysql
+#     tags:
+#       - tag1
+#       - tag2

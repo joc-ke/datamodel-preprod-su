@@ -1,0 +1,10 @@
+# ---
+# managed_devices:
+#     # - name: labhf-osl-pa01
+#     #   model: PA-1410
+#     #   serial_number: 2367587231
+#     #   ipv4: 10.10.10.1/32
+#     - name: labhf-osl-pa02
+#       model: PA-460
+#       serial_number: 023001018232
+#       ipv4: 10.10.10.2/32

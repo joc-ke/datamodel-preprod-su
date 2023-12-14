@@ -1,0 +1,73 @@
+# VirtualSystem:
+
+#   type: object
+#   properties:
+#     name: VS_Admin
+#       type: string
+#       required: true
+#       description: Virtual system name
+#     allow_forwarding_decyrpted_content:
+#       type: boolean
+#       description: Allow forwarding decrypted content
+#     dns_proxy:
+#       type: string
+#       description: DNS proxy
+#     interfaces:
+#       type: array
+#       items:
+#         type: string
+#       description: List of interfaces assigned to the virtual system
+#     vlans:
+#       type: array
+#       items:
+#         type: string
+#       description: List of VLANs assigned to the virtual system
+#     virutal_router:
+#       type: string
+#       description: Virtual router assigned to the virtual system
+#     virtual_wires:
+#       type: array
+#       items:
+#         type: string
+#       description: List of virtual wires assigned to the virtual system
+#     limits:
+#       type: object
+#       properties:
+#         sessions:
+#           type: integer
+#           description: Maximum number of sessions allowed for the virtual system
+#         security_rules:
+#           type: integer
+#           description: Maximum number of security rules allowed for the virtual system
+#         nat_rules:
+#           type: integer
+#           description: Maximum number of NAT rules allowed for the virtual system
+#         decryption_rules:
+#           type: integer
+#           description: Maximum number of decryption rules allowed for the virtual system
+#         qos_rules:
+#           type: integer
+#           description: Maximum number of QoS rules allowed for the virtual system
+#         application_override_rules:
+#           type: integer
+#           description: Maximum number of application override rules allowed for the virtual system
+#         policy_based_forwarding_rules:
+#           type: integer
+#           description: Maximum number of policy-based forwarding rules allowed for the virtual system
+#         authentication_rules:
+#           type: integer
+#           description: Maximum number of authentication rules allowed for the virtual system
+#         dos_protection_rules:
+#           type: integer
+#           description: Maximum number of DoS protection rules allowed for the virtual system
+#         site_to_site_vpn_tunnels:
+#           type: integer
+#           description: Maximum number of site-to-site VPN tunnels allowed for the virtual system
+#         concurrent_ssl_vpn_tunnels:
+#           type: integer
+#           description: Maximum number of concurrent SSL VPN tunnels allowed for the virtual system
+#     inter_vsys_user_id_share:
+#       type: boolean
+#       description: Share user ID information between virtual systems
+#   required:
+#     - name

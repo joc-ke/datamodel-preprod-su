@@ -1,0 +1,20 @@
+---
+name: Synkroniser tfstate filområde
+
+on:
+  workflow_run:
+    workflows:
+      - Terraform Apply (DNAC)
+      - Terraform Apply (ISE)
+      - Terraform Apply (FUSION)
+      - Terraform Apply (PANORAMA)
+    types:
+      - completed
+
+jobs:
+  rsync_tfstate:
+    name: Synkroniser tfstate
+    uses: SPHF-Nettverk-IaC/workflows/.github/workflows/rsync.yml@main
+    with:
+      source_path: '/mnt/tfstate/${{ github.repository }}/'
+      destination_path: '/mnt/tfstate_backup/${{ github.repository }}'

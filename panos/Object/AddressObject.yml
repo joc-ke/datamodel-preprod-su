@@ -1,0 +1,9 @@
+# Objects:
+#   - name: auth-client-server1
+#     description: radius-clients
+#     type: ip-netmask
+#     value: 10.184.192.45/32
+#     tags:
+#       - tag3
+#       - terraformed
+# # 

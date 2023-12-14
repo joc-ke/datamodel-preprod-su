@@ -1,0 +1,11 @@
+---
+name: Lint Code Base
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  linter:
+    uses: SPHF-Nettverk-IaC/workflows/.github/workflows/linter.yml@main

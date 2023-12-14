@@ -1,0 +1,13 @@
+---
+stack:
+  name: "st_OSL"
+  stack_members:
+    - OSL
+    - Preprod HF
+#   template_variables:
+#     - name: "$variable1"
+#       type: "ip-netmask"
+#       value: "10.100.55.0/24"
+#     - name: "$variable2"
+#       type: "ip-range"
+#       value: "10.100.1.20-10.100.1.49"

@@ -1,0 +1,10 @@
+# RootConfiguration:
+devicegroup:
+  name: OSL
+  description: DOSL DeviceGroup
+  parent: Preprod HF
+template:
+  name: OSL
+  description: template used for OSL
+  device:
+location_type: "A"
